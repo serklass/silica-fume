@@ -1,22 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт в разработке</title>
+    <title>SIA EURO-SIB | Silica Fume Supplier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f0f2f5; }
-        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #333; }
-        p { color: #666; }
-        a { color: #007bff; text-decoration: none; font-weight: bold; }
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --light: #f8f9fa;
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background-color: var(--light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 90%;
+            background: white;
+            padding: 50px;
+            border-radius: 2px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary);
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        p.description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+        .contact-item h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .contact-item p, .contact-item a {
+            font-size: 15px;
+            text-decoration: none;
+            color: var(--text);
+            margin: 0;
+            line-height: 1.4;
+        }
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+        @media (max-width: 600px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .container { padding: 30px; }
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Сайт в разработке</h1>
-        <p>Мы скоро вернемся с чем-то крутым!</p>
-        <p>Связаться с нами: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+
+<div class="container">
+    <div class="logo">SIA EURO-SIB</div>
+    
+    <h1>Premium Silica Fume for the European Market</h1>
+    <p class="description">
+        Our website is currently under reconstruction to provide you with a better digital experience. 
+        We continue to supply high-quality Silica Fume (Microsilica) across Europe. 
+        Please contact us directly for inquiries and technical documentation.
+    </p>
+
+    <div class="contact-grid">
+        <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:info@silica-fume.eu">info@silica-fume.eu</a>
+        </div>
+        <div class="contact-item">
+            <h3>Phone</h3>
+            <a href="tel:+37122429046">+371 22429046</a>
+        </div>
+        <div class="contact-item" style="grid-column: 1 / -1;">
+            <h3>Headquarters</h3>
+            <p>Liela iela 19-55, Marupe, Marupes nov.,<br>Latvia, LV-2167</p>
+        </div>
     </div>
+</div>
+
 </body>
 </html>
